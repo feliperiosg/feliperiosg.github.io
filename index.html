@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manuel Rios — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Print / Download button (hidden when printing) -->
+  <div class="toolbar no-print">
+    <button class="btn-print" onclick="window.print()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+      </svg>
+      Print / Save PDF
+    </button>
+  </div>
+
+  <main class="cv">
+
+    <!-- ── HEADER ─────────────────────────────────── -->
+    <header class="cv-header">
+      <h1 class="cv-name">Manuel Rios</h1>
+      <p class="cv-title">Hydrometeorologist &nbsp;|&nbsp; Earth Observations Scientist</p>
+      <div class="cv-contact">
+        <span>Coventry, England, CV6 4RA</span>
+        <span class="sep">·</span>
+        <span>+44 7915 765 877</span>
+        <span class="sep">·</span>
+        <a href="mailto:feliperiosg@gmail.com">feliperiosg@gmail.com</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/feliperiosg" target="_blank">GitHub</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/feliperiosg/" target="_blank">LinkedIn</a>
+      </div>
+    </header>
+
+    <!-- ── SUMMARY ────────────────────────────────── -->
+    <section class="cv-section">
+      <p class="cv-summary">
+        Hydrometeorologist and Earth Observations and Data/Geospatial scientist with 12+ years of experience
+        in data exploration and curation, software development, statistical analysis, and visualization of large
+        geospatial and/or remote sensing datasets and/or Earth Observations. Skilled in (e.g.) Python, R, GitHub.
+      </p>
+    </section>
+
+    <!-- ── WORK EXPERIENCE ───────────────────────── -->
+    <section class="cv-section">
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Hydrometeorologist</span>
+            <span class="entry-org">Previsico &nbsp;|&nbsp; Loughborough/London</span>
+          </div>
+          <span class="entry-date">Mar 2025 – Present</span>
+        </div>
+        <ul>
+          <li>Improvement, development, and curation of the in-house Probabilistic Flood Forecasting model.</li>
+          <li>Principal lead on the curation of the diverse rainfall products used in day-to-day operations.</li>
+          <li>Assistance to the dev-ops team to ensure that the operational products stay reliable and accurate.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">PDRA – Data Scientist</span>
+            <span class="entry-org">Cardiff University &nbsp;|&nbsp; Cardiff</span>
+          </div>
+          <span class="entry-date">Dec 2021 – Feb 2025</span>
+        </div>
+        <ul>
+          <li>Developed a STOchastic Rainstorm Model (STORM3) for the Horn of Africa utilizing Python.</li>
+          <li>Developed a Gridded hIgh-resolution Rainfall dataset for the Horn of AFrica (GIRHAF), also in Python.</li>
+          <li>Worked collaboratively on code/software development for a hydrological model for the Horn of Africa drylands using GitHub.</li>
+          <li>Designed and assisted in the training of the hydrological model for the Horn of Africa drylands at ICPAC in Nairobi, Kenya.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">PDRA – Data Scientist</span>
+            <span class="entry-org">Czech Technical University in Prague &nbsp;|&nbsp; Prague</span>
+          </div>
+          <span class="entry-date">Sep 2020 – Oct 2021</span>
+        </div>
+        <ul>
+          <li>Data analysis and manipulation of rainfall retrievals from commercial microwave link-networks (CMLs) utilizing Python.</li>
+          <li>Produced high-resolution rainfall fields (from CMLs), also in Python.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">PDRA – Data Scientist</span>
+            <span class="entry-org">University of Bonn &nbsp;|&nbsp; Bonn</span>
+          </div>
+          <span class="entry-date">May 2018 – Sep 2020</span>
+        </div>
+        <ul>
+          <li>Spatiotemporal upscaling of the DWD (Deutscher Wetterdienst) radar gridded products RADOLAN and RADKLIM utilizing Python.</li>
+          <li>Hydrological and climate modelling over the Jülich Supercomputing Centre (JSC).</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">PDRA – Data Scientist</span>
+            <span class="entry-org">The University of Iowa &nbsp;|&nbsp; Iowa City</span>
+          </div>
+          <span class="entry-date">Mar 2017 – Mar 2018</span>
+        </div>
+        <ul>
+          <li>Analyzed and manipulated large datasets such as IMERG (Integrated MultisatellitE Retrievals for GPM) and IBTrACS utilizing R.</li>
+          <li>Performed non-parametric analysis via circular/directional statistics for the characterization of the diurnal cycle of maximum rainfall from tropical cyclones, also in R.</li>
+          <li>Developed R-code for parallel computing over a high performance computer (HPC).</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">PhD – Data Scientist</span>
+            <span class="entry-org">Wageningen University &amp; Research &nbsp;|&nbsp; Wageningen</span>
+          </div>
+          <span class="entry-date">May 2013 – Mar 2017</span>
+        </div>
+        <ul>
+          <li>Carried out statistical analyses on large rainfall datasets from radar, satellite, and commercial microwave link-networks (CMLs).</li>
+          <li>Promoted research on novel rainfall retrieval technologies at international conferences (IPC11, EGU2016, ERAD2016).</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Hydraulic Engineer</span>
+            <span class="entry-org">Civil &amp; Tech Ingenieros S.A.S &nbsp;|&nbsp; Bogotá</span>
+          </div>
+          <span class="entry-date">Jul 2012 – May 2013</span>
+        </div>
+        <ul>
+          <li>Hydrological, hydraulic, and scour analyses for the relocation of gas pipelines utilizing HEC-RAS.</li>
+          <li>Fieldwork and design of hydraulic structures for surface runoff utilizing Visual Basic.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Intern</span>
+            <span class="entry-org">KNMI &nbsp;|&nbsp; De Bilt</span>
+          </div>
+          <span class="entry-date">Sep 2010 – Oct 2011</span>
+        </div>
+        <ul>
+          <li>Developed an interpolation methodology to reconstruct rainfall fields from commercial microwave link-networks (CMLs), heavily based on geostatistics, utilizing R.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Intern</span>
+            <span class="entry-org">Deltares &nbsp;|&nbsp; Utrecht</span>
+          </div>
+          <span class="entry-date">Sep 2010 – Oct 2011</span>
+        </div>
+        <ul>
+          <li>Assisted with the extension of the process library of ANIMO-MT3DMS, a coupled unsaturated/saturated zone nutrient transport model for hydrological analysis, utilizing Fortran.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- ── SKILLS ─────────────────────────────────── -->
+    <section class="cv-section">
+      <h2 class="section-title">Core Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">R</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">LaTeX</span>
+        <span class="skill-tag">Bash</span>
+        <span class="skill-tag">Fortran</span>
+        <span class="skill-tag">C/C++</span>
+        <span class="skill-tag">D3</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">ArcGIS</span>
+        <span class="skill-tag">AutoCAD</span>
+        <span class="skill-tag">Civil 3D</span>
+        <span class="skill-tag">HEC-RAS</span>
+        <span class="skill-tag">IMOD</span>
+        <span class="skill-tag">Statistics</span>
+        <span class="skill-tag">Geostatistics</span>
+        <span class="skill-tag">Scientific Writing</span>
+        <span class="skill-tag">Matlab</span>
+        <span class="skill-tag">Docker</span>
+      </div>
+    </section>
+
+    <!-- ── EDUCATION ──────────────────────────────── -->
+    <section class="cv-section">
+      <h2 class="section-title">Education</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Doctor of Philosophy &nbsp;|&nbsp; Hydrometeorology</span>
+            <span class="entry-org">Wageningen University &amp; Research</span>
+          </div>
+          <span class="entry-date">May 2013 – Mar 2017</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Master of Science &nbsp;|&nbsp; Earth Sciences</span>
+            <span class="entry-org">Utrecht University</span>
+          </div>
+          <span class="entry-date">Feb 2010 – Dec 2011</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Bachelor of Engineering &nbsp;|&nbsp; Civil Engineering</span>
+            <span class="entry-org">Universidad Nacional de Colombia</span>
+          </div>
+          <span class="entry-date">Jul 2002 – Jul 2007</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── LANGUAGES ──────────────────────────────── -->
+    <section class="cv-section">
+      <h2 class="section-title">Languages</h2>
+      <div class="languages-row">
+        <div class="lang-item"><span class="lang-name">English</span><span class="lang-level">Fluent</span></div>
+        <div class="lang-item"><span class="lang-name">Spanish</span><span class="lang-level">Native</span></div>
+        <div class="lang-item"><span class="lang-name">Dutch</span><span class="lang-level">Beginner</span></div>
+      </div>
+    </section>
+
+    <!-- ── AWARDS ─────────────────────────────────── -->
+    <section class="cv-section">
+      <h2 class="section-title">Awards</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Loan-Scholarship for postgraduate studies abroad</span>
+            <span class="entry-org">Icetex-Colfuturo</span>
+          </div>
+          <span class="entry-date">Jul 2009</span>
+        </div>
+        <p class="entry-desc">Scholarship financing outstanding postgraduate studies abroad given to academically excellent graduates.</p>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATES ───────────────────────────── -->
+    <section class="cv-section">
+      <h2 class="section-title">Certificates</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Data Analysis in Social Science</span>
+            <span class="entry-org">MITx</span>
+          </div>
+          <span class="entry-date">Sep 2020</span>
+        </div>
+        <p class="entry-desc">Certificate ID: <code>de70e679270e44c389bfbcd02bdcdee8</code></p>
+      </div>
+    </section>
+
+    <!-- ── PUBLICATIONS ───────────────────────────── -->
+    <section class="cv-section">
+      <h2 class="section-title">Publications</h2>
+      <ol class="publications">
+        <li>
+          <strong>Rios Gaona, M.F.</strong>, Michaelides, K., and Singer, M.B.: STORM v.2: A simple, stochastic rainfall model for exploring the impacts of climate and climate change at and near the land surface in gauged watersheds. <em>Geosci. Model Dev.</em>, 17, 5387–5412, <a href="https://doi.org/10.5194/gmd-17-5387-2024" target="_blank">doi:10.5194/gmd-17-5387-2024</a>, 2024.
+        </li>
+        <li>
+          Asfaw, D.T., Singer, M.B., Rosolem, R., MacLeod, D., Cuthbert, M., Miguitama, E.Q., <strong>Rios Gaona, M.F.</strong>, and Michaelides, K.: stoPET v1.0: a stochastic potential evapotranspiration generator for simulation of climate change impacts. <em>Geosci. Model Dev.</em>, 16, 557–571, <a href="https://doi.org/10.5194/gmd-16-557-2023" target="_blank">doi:10.5194/gmd-16-557-2023</a>, 2023.
+        </li>
+        <li>
+          <strong>Rios Gaona, M.F.</strong>, Villarini, G., Zhang, W., Vecchi, G.A.: The added value of IMERG in characterizing rainfall in tropical cyclones. <em>Atmos. Res.</em>, 209, 95–102, <a href="https://doi.org/10.1016/j.atmosres.2018.03.008" target="_blank">doi:10.1016/j.atmosres.2018.03.008</a>, 2018.
+        </li>
+        <li>
+          <strong>Rios Gaona, M.F.</strong>, Villarini, G.: Characterization of the diurnal cycle of maximum rainfall in tropical cyclones. <em>J. Hydrol.</em>, 564, 997–1007, <a href="https://doi.org/10.1016/j.jhydrol.2018.07.062" target="_blank">doi:10.1016/j.jhydrol.2018.07.062</a>, 2018.
+        </li>
+        <li>
+          <strong>Rios Gaona, M.F.</strong>, Overeem, A., Raupach, T., Leijnse, H., and Uijlenhoet, R.: Rainfall retrieval with commercial microwave links in São Paulo, Brazil. <em>Atmos. Meas. Tech.</em>, 11, 4465–4476, <a href="https://doi.org/10.5194/amt-11-4465-2018" target="_blank">doi:10.5194/amt-11-4465-2018</a>, 2018.
+        </li>
+        <li>
+          <strong>Rios Gaona, M.F.</strong>, Overeem, A., Brasjen, N., Meirink, J.F., Leijnse, H., and Uijlenhoet, R.: Evaluation of Rainfall Products Derived From Satellites and Microwave Links for The Netherlands. <em>IEEE Trans. Geosci. Remote Sens.</em>, 55(12), 6849–6859, <a href="https://doi.org/10.1109/TGRS.2017.2735439" target="_blank">doi:10.1109/TGRS.2017.2735439</a>, 2017.
+        </li>
+        <li>
+          <strong>Rios Gaona, M.F.</strong>, Overeem, A., Leijnse, H., and Uijlenhoet, R.: First-year evaluation of GPM-rainfall over the Netherlands: IMERG Day-1 Final Run (V03D). <em>J. Hydrometeor.</em>, 17, 2799–2814, <a href="https://doi.org/10.1175/JHM-D-16-0087.1" target="_blank">doi:10.1175/JHM-D-16-0087.1</a>, 2016.
+        </li>
+        <li>
+          <strong>Rios Gaona, M.F.</strong>, Overeem, A., Leijnse, H., and Uijlenhoet, R.: Measurement and interpolation uncertainties in rainfall maps from cellular communication networks. <em>Hydrol. Earth Syst. Sci.</em>, 19, 3571–3584, <a href="https://doi.org/10.5194/hess-19-3571-2015" target="_blank">doi:10.5194/hess-19-3571-2015</a>, 2015.
+        </li>
+      </ol>
+    </section>
+
+    <!-- ── INTERESTS ──────────────────────────────── -->
+    <section class="cv-section">
+      <h2 class="section-title">Interests</h2>
+      <p class="interests">
+        Data visualization &nbsp;·&nbsp; Raspberry Pi &nbsp;·&nbsp; Computer science &nbsp;·&nbsp;
+        Quantum computing &nbsp;·&nbsp; Astrophysics &nbsp;·&nbsp; Sci-fi &nbsp;·&nbsp; Philosophy
+      </p>
+    </section>
+
+  </main>
+
+</body>
+</html>

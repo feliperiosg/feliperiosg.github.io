@@ -1,0 +1,312 @@
+/* ─────────────────────────────────────────────────────────────
+   Manuel Rios — CV stylesheet
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --accent:   #1a6faf;
+  --accent-dk:#155a8a;
+  --text:     #1c1c1e;
+  --muted:    #555;
+  --rule:     #d8dde4;
+  --bg:       #f5f7fa;
+  --card:     #ffffff;
+  --tag-bg:   #e8f0f8;
+  --tag-fg:   #1a4f7a;
+  --radius:   6px;
+  --max-w:    860px;
+  --font:     'Inter', system-ui, sans-serif;
+  --mono:     'JetBrains Mono', monospace;
+}
+
+/* ── Reset & base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 15px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* ── Toolbar ──────────────────────────────────────────────── */
+.toolbar {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.5rem;
+  z-index: 100;
+}
+
+.btn-print {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(26,111,175,0.3);
+  transition: background 0.15s, box-shadow 0.15s;
+}
+.btn-print:hover {
+  background: var(--accent-dk);
+  box-shadow: 0 4px 14px rgba(26,111,175,0.4);
+}
+
+/* ── CV wrapper ───────────────────────────────────────────── */
+.cv {
+  max-width: var(--max-w);
+  margin: 2.5rem auto;
+  background: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+  overflow: hidden;
+  padding: 3rem 3.5rem;
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+.cv-header {
+  text-align: center;
+  padding-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 2px solid var(--rule);
+}
+
+.cv-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text);
+}
+
+.cv-title {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
+.cv-contact {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0.1rem;
+  align-items: center;
+}
+.cv-contact .sep { opacity: 0.4; }
+
+/* ── Summary ──────────────────────────────────────────────── */
+.cv-summary {
+  font-size: 0.95rem;
+  color: #3a3a3c;
+  line-height: 1.75;
+}
+
+/* ── Section ──────────────────────────────────────────────── */
+.cv-section {
+  margin-top: 2rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  padding-bottom: 0.4rem;
+  border-bottom: 1.5px solid var(--rule);
+  margin-bottom: 1.2rem;
+}
+
+/* ── Entry ────────────────────────────────────────────────── */
+.entry {
+  margin-bottom: 1.4rem;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.entry-role {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.entry-org {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+.entry-date {
+  font-size: 0.82rem;
+  color: var(--muted);
+  white-space: nowrap;
+  padding-top: 0.1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.entry ul {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+.entry ul li {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #2a2a2e;
+}
+
+.entry-desc {
+  margin-top: 0.4rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+/* ── Skills ───────────────────────────────────────────────── */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.5rem;
+}
+
+.skill-tag {
+  background: var(--tag-bg);
+  color: var(--tag-fg);
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* ── Languages ────────────────────────────────────────────── */
+.languages-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.lang-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.lang-name {
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.lang-level {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* ── Publications ─────────────────────────────────────────── */
+.publications {
+  padding-left: 1.5rem;
+}
+
+.publications li {
+  font-size: 0.875rem;
+  margin-bottom: 0.85rem;
+  color: #2a2a2e;
+  line-height: 1.6;
+}
+
+.publications li em {
+  font-style: italic;
+}
+
+/* ── Interests ────────────────────────────────────────────── */
+.interests {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ── code ─────────────────────────────────────────────────── */
+code {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  background: var(--tag-bg);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  color: var(--tag-fg);
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 680px) {
+  .cv {
+    margin: 0;
+    border-radius: 0;
+    padding: 1.75rem 1.25rem;
+  }
+  .cv-name { font-size: 1.75rem; }
+  .entry-header { flex-direction: column; gap: 0.2rem; }
+  .toolbar { top: 0.75rem; right: 0.75rem; }
+}
+
+/* ── Print ────────────────────────────────────────────────── */
+@media print {
+  @page {
+    margin: 15mm 18mm;
+    size: A4;
+  }
+
+  .no-print { display: none !important; }
+
+  body {
+    background: #fff;
+    font-size: 10.5pt;
+    color: #000;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .section-title {
+    color: #1a1a1a;
+    border-bottom-color: #aaa;
+  }
+
+  .skill-tag {
+    background: #eee;
+    color: #000;
+    border: 0.5px solid #ccc;
+  }
+
+  a { color: #000; }
+
+  .entry { page-break-inside: avoid; }
+  .cv-section { page-break-inside: avoid; }
+
+  .publications li { page-break-inside: avoid; }
+}
