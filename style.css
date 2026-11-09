@@ -115,7 +115,7 @@ a:hover { text-decoration: underline; }
 .profile-section {
   display: flex;
   gap: 2.5rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .profile-text {
@@ -338,4 +338,9 @@ code {
   .cv-section { page-break-inside: avoid; }
 
   .publications li { page-break-inside: avoid; }
+
+  .profile-chart canvas {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 }

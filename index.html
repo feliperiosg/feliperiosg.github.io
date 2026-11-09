@@ -70,7 +70,7 @@
         </p>
       </div>
 
-      <div class="profile-chart no-print">
+      <div class="profile-chart">
         <canvas id="radarChart" width="280" height="280"></canvas>
         <p class="chart-caption">Competency profile</p>
       </div>
@@ -81,11 +81,11 @@
     (function () {
       const labels = [
         'Hydrometeorology',
-        'Data Science',
-        'Earth Observations',
+        ['Data', 'Science'],
+        ['Earth', 'Observations'],
         'Hydrology',
-        'Geospatial\nAnalysis',
-        'Software\nDevelopment'
+        ['Geospatial', 'Analysis'],
+        ['Software', 'Development']
       ];
       const scores = [9, 9, 8, 7, 7, 7];
 
