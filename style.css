@@ -335,11 +335,12 @@ code {
   a { color: #000; }
 
   .entry { page-break-inside: avoid; }
-  .cv-section { page-break-inside: avoid; }
 
   .publications li { page-break-inside: avoid; }
 
   .profile-chart canvas {
+    width: 220px !important;
+    height: 220px !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
