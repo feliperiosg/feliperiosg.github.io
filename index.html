@@ -134,6 +134,27 @@
         }
       });
     })();
+
+    // Convert canvas → <img> before printing so Firefox renders it correctly,
+    // then restore the canvas afterwards.
+    window.addEventListener('beforeprint', function () {
+      const canvas = document.getElementById('radarChart');
+      if (!canvas) return;
+      const img = document.createElement('img');
+      img.id = 'radarChartImg';
+      img.src = canvas.toDataURL('image/png');
+      img.style.width  = '220px';
+      img.style.height = '220px';
+      canvas.parentNode.insertBefore(img, canvas);
+      canvas.style.display = 'none';
+    });
+
+    window.addEventListener('afterprint', function () {
+      const img    = document.getElementById('radarChartImg');
+      const canvas = document.getElementById('radarChart');
+      if (img) img.remove();
+      if (canvas) canvas.style.display = '';
+    });
     </script>
 
     <!-- ── WORK EXPERIENCE ───────────────────────── -->

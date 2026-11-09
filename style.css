@@ -338,7 +338,20 @@ code {
 
   .publications li { page-break-inside: avoid; }
 
-  .profile-chart canvas {
+  /* Float-based profile layout for cross-browser print reliability */
+  .profile-section {
+    display: block;
+  }
+  .profile-chart {
+    float: right;
+    margin: 0 0 0.5rem 1.5rem;
+  }
+  .profile-text {
+    display: block;
+  }
+
+  .profile-chart canvas,
+  .profile-chart img {
     width: 220px !important;
     height: 220px !important;
     -webkit-print-color-adjust: exact;
