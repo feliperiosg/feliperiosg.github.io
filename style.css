@@ -111,6 +111,33 @@ a:hover { text-decoration: underline; }
 }
 .cv-contact .sep { opacity: 0.4; }
 
+/* ── Profile (two-column) ─────────────────────────────────── */
+.profile-section {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.profile-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.profile-chart {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.chart-caption {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 /* ── Summary ──────────────────────────────────────────────── */
 .cv-summary {
   font-size: 0.95rem;
@@ -265,6 +292,8 @@ code {
   .cv-name { font-size: 1.75rem; }
   .entry-header { flex-direction: column; gap: 0.2rem; }
   .toolbar { top: 0.75rem; right: 0.75rem; }
+  .profile-section { flex-direction: column; }
+  .profile-chart canvas { width: 220px !important; height: 220px !important; }
 }
 
 /* ── Print ────────────────────────────────────────────────── */

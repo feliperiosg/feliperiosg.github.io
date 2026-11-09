@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
 
@@ -40,14 +41,100 @@
       </div>
     </header>
 
-    <!-- ── SUMMARY ────────────────────────────────── -->
-    <section class="cv-section">
-      <p class="cv-summary">
-        Hydrometeorologist and Earth Observations and Data/Geospatial scientist with 12+ years of experience
-        in data exploration and curation, software development, statistical analysis, and visualization of large
-        geospatial and/or remote sensing datasets and/or Earth Observations. Skilled in (e.g.) Python, R, GitHub.
-      </p>
+    <!-- ── PROFILE ───────────────────────────────── -->
+    <section class="cv-section profile-section">
+
+      <div class="profile-text">
+        <h2 class="section-title">Profile</h2>
+        <p class="cv-summary">
+          Scientist and engineer with 12+ years of experience, united by a single
+          thread: <strong>rainfall</strong> — measured, modelled, retrieved, and forecast across
+          scales from street-level floods to continental climate systems.
+        </p>
+        <p class="cv-summary" style="margin-top:0.75rem">
+          That focus has demanded fluency across disciplines. Depending on the
+          problem, I have worked as a <em>hydrometeorologist</em> designing stochastic
+          storm models, a <em>data scientist</em> wrangling satellite and radar archives
+          at HPC scale, an <em>earth-observations specialist</em> validating GPM and
+          commercial microwave-link retrievals, a <em>hydrologist</em> building and
+          training operational flood-forecasting pipelines, and a
+          <em>geospatial analyst</em> applying geostatistics to reconstruct rainfall
+          fields. I have shipped research code in Python, R, and Fortran, published
+          in peer-reviewed journals, and presented at major international
+          conferences — bridging the gap between science and engineering.
+        </p>
+        <p class="cv-summary" style="margin-top:0.75rem">
+          My breadth is deliberate, not accidental. Each role added a tool to the
+          same toolkit; the result is a scientist who can go deep on the
+          atmosphere, the data pipeline, or the model — and connect all three.
+        </p>
+      </div>
+
+      <div class="profile-chart no-print">
+        <canvas id="radarChart" width="280" height="280"></canvas>
+        <p class="chart-caption">Competency profile</p>
+      </div>
+
     </section>
+
+    <script>
+    (function () {
+      const labels = [
+        'Hydrometeorology',
+        'Data Science',
+        'Earth Observations',
+        'Hydrology',
+        'Geospatial\nAnalysis',
+        'Software\nDevelopment'
+      ];
+      const scores = [9, 9, 8, 7, 7, 7];
+
+      const ctx = document.getElementById('radarChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Manuel Rios',
+            data: scores,
+            backgroundColor: 'rgba(26, 111, 175, 0.15)',
+            borderColor: 'rgba(26, 111, 175, 0.85)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgba(26, 111, 175, 1)',
+            pointRadius: 4,
+            pointHoverRadius: 6
+          }]
+        },
+        options: {
+          responsive: false,
+          scales: {
+            r: {
+              min: 0,
+              max: 10,
+              ticks: {
+                stepSize: 2,
+                display: false
+              },
+              grid: { color: 'rgba(0,0,0,0.08)' },
+              angleLines: { color: 'rgba(0,0,0,0.1)' },
+              pointLabels: {
+                font: { family: 'Inter, sans-serif', size: 11, weight: '500' },
+                color: '#333'
+              }
+            }
+          },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: ctx => ` ${ctx.raw}/10`
+              }
+            }
+          }
+        }
+      });
+    })();
+    </script>
 
     <!-- ── WORK EXPERIENCE ───────────────────────── -->
     <section class="cv-section">
