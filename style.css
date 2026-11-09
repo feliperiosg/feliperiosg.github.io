@@ -338,16 +338,16 @@ code {
 
   .publications li { page-break-inside: avoid; }
 
-  /* Float-based profile layout for cross-browser print reliability */
   .profile-section {
-    display: block;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
   }
-  .profile-chart {
-    float: right;
-    margin: 0 0 0.5rem 1.5rem;
-  }
-  .profile-text {
-    display: block;
+
+  .profile-section::after {
+    content: '';
+    display: table;
+    clear: both;
   }
 
   .profile-chart canvas,
