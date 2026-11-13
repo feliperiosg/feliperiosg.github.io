@@ -170,9 +170,12 @@
           <span class="entry-date">Mar 2025 – Present</span>
         </div>
         <ul>
-          <li>Improvement, development, and curation of the in-house Probabilistic Flood Forecasting model.</li>
-          <li>Principal lead on the curation of the diverse rainfall products used in day-to-day operations.</li>
-          <li>Assistance to the dev-ops team to ensure that the operational products stay reliable and accurate.</li>
+          <li>Designed and built the first probability-of-exceedance and risk post-processing module for an operational ensemble flood forecast, later used as the basis for production.</li>
+          <li>Verified ensemble NWP rainfall (MOGREPS) against radar using categorical skill scores (POD, FAR, CSI), and delivered asset-level flood-probability exposure analysis across ~170 client portfolios.</li>
+          <li>Found and diagnosed production faults: probabilities stuck at fixed values (traced to the flood-library data) and a reprojection-order error in the H3 post-processing pipeline that under-represented flooded area.</li>
+          <li>Built a flood-library inventory and health-check pipeline (GeoParquet) and automated HTML forecast dashboards running daily for the UK, US and South Africa.</li>
+          <li>Onboarded new regions (South Africa, North Carolina, Spain, India, Belgium): wrote a region-agnostic grid generator and added new operational rainfall sources (EUMETSAT H-SAF H40B, NOAA RRQPE) where no radar exists.</li>
+          <li>Automated a manual flood-hindcast workflow into a single command-line tool (postcode + date &rarr; full outputs).</li>
         </ul>
       </div>
 
@@ -296,8 +299,16 @@
       <h2 class="section-title">Core Skills</h2>
       <div class="skills-grid">
         <span class="skill-tag">Python</span>
+        <span class="skill-tag">xarray / Dask</span>
         <span class="skill-tag">R</span>
         <span class="skill-tag">Git</span>
+        <span class="skill-tag">AWS (S3)</span>
+        <span class="skill-tag">Linux / HPC</span>
+        <span class="skill-tag">NetCDF / GeoTIFF</span>
+        <span class="skill-tag">GeoParquet</span>
+        <span class="skill-tag">H3</span>
+        <span class="skill-tag">QGIS</span>
+        <span class="skill-tag">Ensemble Verification</span>
         <span class="skill-tag">LaTeX</span>
         <span class="skill-tag">Bash</span>
         <span class="skill-tag">Fortran</span>
